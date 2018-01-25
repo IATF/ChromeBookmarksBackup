@@ -38,10 +38,10 @@ class ChromeBookmarksBackup(win32serviceutil.ServiceFramework):
 	_svc_display_name_ = '浏览器书签备份'
 	_svc_description_ = 'bookmarks backup'
 
-	# def __init__(self, args):
-	# 	win32serviceutil.ServiceFramework.__init__(self, args)
-	# 	self.stop_event = win32event.CreateEvent(None,0,0,None)
-	# 	log('init')
+	 def __init__(self, args):
+	 	win32serviceutil.ServiceFramework.__init__(self, args)
+	 	self.stop_event = win32event.CreateEvent(None,0,0,None)
+	 	log('init')
 
 
 
